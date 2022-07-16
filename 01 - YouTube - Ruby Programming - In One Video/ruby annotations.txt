@@ -1,0 +1,3 @@
+what is a garbage collector
+ruby on rails - web applications
+ruby string api
