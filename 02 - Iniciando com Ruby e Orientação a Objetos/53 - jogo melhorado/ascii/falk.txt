@@ -1,0 +1,18 @@
+                                                                 
+                                                                 
+FFFFFFFFFFFFFFFFFFFFFF                lllllll kkkkkkkk           
+F::::::::::::::::::::F                l:::::l k::::::k           
+F::::::::::::::::::::F                l:::::l k::::::k           
+FF::::::FFFFFFFFF::::F                l:::::l k::::::k           
+  F:::::F       FFFFFFaaaaaaaaaaaaa    l::::l  k:::::k    kkkkkkk
+  F:::::F             a::::::::::::a   l::::l  k:::::k   k:::::k 
+  F::::::FFFFFFFFFF   aaaaaaaaa:::::a  l::::l  k:::::k  k:::::k  
+  F:::::::::::::::F            a::::a  l::::l  k:::::k k:::::k   
+  F:::::::::::::::F     aaaaaaa:::::a  l::::l  k::::::k:::::k    
+  F::::::FFFFFFFFFF   aa::::::::::::a  l::::l  k:::::::::::k     
+  F:::::F            a::::aaaa::::::a  l::::l  k:::::::::::k     
+  F:::::F           a::::a    a:::::a  l::::l  k::::::k:::::k    
+FF:::::::FF         a::::a    a:::::a l::::::lk::::::k k:::::k   
+F::::::::FF         a:::::aaaa::::::a l::::::lk::::::k  k:::::k  
+F::::::::FF          a::::::::::aa:::al::::::lk::::::k   k:::::k 
+FFFFFFFFFFF           aaaaaaaaaa  aaaallllllllkkkkkkkk    kkkkkkk

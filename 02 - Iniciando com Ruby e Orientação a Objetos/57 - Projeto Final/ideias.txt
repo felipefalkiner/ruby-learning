@@ -1,0 +1,7 @@
+---> Jogo da Forca
+
+---> ascii art do personagem na Forca
+---> lista de palavras
+---> cada erro recarrega a ascii com clear na tela (detectar windows/linux?)
+
+---> quebrar a palavra numa array (split)

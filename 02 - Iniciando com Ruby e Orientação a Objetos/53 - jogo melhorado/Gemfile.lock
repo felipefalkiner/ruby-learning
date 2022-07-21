@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    tty-cursor (0.7.1)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  tty-cursor
+
+BUNDLED WITH
+   2.3.7
