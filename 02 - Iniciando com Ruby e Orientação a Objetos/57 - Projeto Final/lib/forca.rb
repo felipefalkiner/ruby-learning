@@ -12,14 +12,20 @@ class Forca
         Start.start
         @palavra = "banana"
         palavraArray = @palavra.split
+        @tentativa = generateTry(@palavra)
         @erros = 0
         @acabou = false
-        system("cls")
         draw(erros)
     end
 
-    def addErrors(i)
+    def addErrors(i, mensagem)
         @erros = @erros + i
+        draw(erros)
+        puts mensagem
+        if (@erros == 6)
+            @acabou = true
+            puts "Você perdeu! A palavra era #{@palavra}!"
+        end
     end
 
     def input(entrada = "")
@@ -27,32 +33,27 @@ class Forca
         if (entrada == "")
             return "Por favor digite algo..."
         end
-
-        if (erros != 5)
+        
+        if (erros != 6)
             puts "ponto 1"
+
             if (entrada.length == 1)
                 puts "ponto 2 - o tamanho é #{entrada.length} e o #{@palavra.include? entrada}"
                 if (@palavra.include? entrada)
                     ### código super legal para refazer a palavra
                     puts "ponto 3"
                 else
-                    puts "ponto 4"
-                    addErrors(1)
-                    puts erros.to_s
-                    system("cls")
-                    # sleep(1)
-                    draw(erros)
-                    puts "VOCÊ ERROU! ESSA LETRA NÃO EXISTE NA PALAVRA!"
+                    addErrors(1, "VOCÊ ERROU! ESSA LETRA NÃO EXISTE NA PALAVRA!")
                 end
             else
-                puts "vou implementar"
+                if (@palavra == entrada.downcase)
+                    @acabou = true
+                    draw(erros)
+                    "Você acertou a palavra #{@palavra}! Parabéns!"
+                else
+                    addErrors(1, "VOCÊ ERROU! ESSA NÃO É A PALAVRA!")
+                end
             end
-        else
-            addErrors(1)
-            system("cls")
-            draw(erros)
-            @acabou = true
-            "Você perdeu! A palavra era #{@palavra}!"
         end
 
     end
