@@ -1,16 +1,18 @@
 require_relative 'start'
 require_relative 'draw'
 require_relative 'try-maker'
+require_relative 'dictionary'
 
 include Draw
 include TryMaker
+include Dictionary
 
 class Forca
     attr_reader :palavra, :erros, :acabou, :tentativa, :palavraArray, :tentativaArray
 
     def initialize
         Start.start
-        @palavra = "banana"
+        @palavra = randomWord
         @palavraArray = @palavra.split("")
         @tentativa = generateTry(@palavra)
         @tentativaArray = @tentativa.split("")
@@ -19,19 +21,26 @@ class Forca
         draw(erros)
     end
 
-    def rebuildTry 
+    def rebuildTry
         @tentativa = tentativaArray.join
+        if (@tentativa == @palavra)
+            @acabou = true
+            draw(erros)
+            puts "Você acertou a palavra #{@palavra}! Parabéns!"
+        end
     end
 
     def sucess(letraInput)
+        draw(erros)
         i = 0
         for letra in palavraArray
             if (letraInput == letra)
                 tentativaArray[i] = letraInput
             end
-        i = i + 1
+            i = i + 1
         end
-        rebuildTry
+        return rebuildTry
+        puts "A letra \"#{letraInput}\" existe na palavra!"
     end
 
     def addErrors(i, mensagem)
@@ -56,8 +65,12 @@ class Forca
             if (entrada.length == 1)
                 # puts "ponto 2 - o tamanho é #{entrada.length} e o #{@palavra.include? entrada}"
                 if (@palavra.include? entrada)
-                    addErrors(0, "A letra \"#{entrada}\" existe na palavra!")
-                    sucess(entrada)
+                    if (@tentativa.include? entrada)
+                        draw(erros)
+                        puts "Você já digitou essa letra!"
+                    else
+                        sucess(entrada)
+                    end
                 else
                     addErrors(1, "VOCÊ ERROU! ESSA LETRA NÃO EXISTE NA PALAVRA!")
                 end
