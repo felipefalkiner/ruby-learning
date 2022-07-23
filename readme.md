@@ -31,6 +31,6 @@ Coisas que eu achei melhor nesse curso do que no vídeo do YouTube para aprender
 - Símbolos
 - Operador de Intervalo
 
-A terceira parte é focada em Orientação a Objeto, ensinando o básico e logo em seguida ensinando como aplicar isso no Ruby.
+A terceira parte é focada em Orientação a Objeto, ensinando o básico e logo em seguida ensinando como aplicar isso no Ruby. Definitivamente é um bom meio de treinar e internalizar mais sobre o Ruby.
 
-Ainda estou terminando essa parte, mas definitivamente é excelente para fixar e entender melhor sobre como as coisas funcionam no Ruby, como os Accessors e o método constrututor.
+A quarta parte do curso ensina outras coisas da linguagem e conta com um projeto final de um jogo da forca que pode ser encontrado nesse repositório. (ruby-learning/02 - Iniciando com Ruby e Orientação a Objetos/57 - Projeto Final/).

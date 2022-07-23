@@ -1,0 +1,1 @@
+system("cls") # qualquer comando de sistema
